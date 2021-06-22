@@ -1,9 +1,18 @@
 <?php
+$psuedo1="le psuedo";
+$login="le login";
+$p=$_POST["psuedo1"];
+$l=$_POST["login"];
+setcookie($psuedo,$p);
+setcookie($login,$l);
+echo $_COOKIE[$p];
+echo $_COOKIE[$l];
+
 session_start();
 ?>
 <?php
 
-echo "la variable SESSION age s'affiche ici :". $_SESSION["age"]=34;
+echo "la variable SESSION age s'affiche ici :". $_SESSION["age"];
 
 echo"<br><br>";
 

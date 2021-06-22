@@ -1,4 +1,7 @@
 <?php
+$psuedoCook="faiza";
+$loginCookie="moi";
+
 session_start();
 ?>
 <!DOCTYPE html>
@@ -42,5 +45,16 @@ fclose($page);
 <input type="text" name="psuedo" id="psuedo">
 <label for="pass">Entrez votre mot de passe: </label>
 <input type="password" name="pass" id="password">
+<input type="submit" value="envoyer">
+</form>
+
+<h3 style='color:red;'>exercice 5/6</h3>
+<!--cet exercice je ne l'ai pas mis dans une même page il est sur la page object.php-->
+
+<form method="post" action="object.php">
+<label for="psuedo">Entrez psuedo: </label>
+<input type="text" name="psuedo1" id="psuedo">
+<label for="pass">Entrez votre login: </label>
+<input type="text" name="login" id="password">
 <input type="submit" value="envoyer">
 </form>
